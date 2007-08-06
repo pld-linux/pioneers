@@ -59,6 +59,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/pioneers.desktop
 %dir %{_gamesdir}/%{name}
 %{_gamesdir}/%{name}/*.game
+%dir %{_gamesdir}/%{name}/themes
+%dir %{_gamesdir}/%{name}/themes/FreeCIV-like
+%dir %{_gamesdir}/%{name}/themes/Tiny
+%dir %{_gamesdir}/%{name}/themes/Wesnoth-like
+%dir %{_gamesdir}/%{name}/themes/Iceland
 %{_gamesdir}/%{name}/themes/*/*.png
 %{_gamesdir}/%{name}/themes/*/*.cfg
 %{_gamesdir}/%{name}/themes/*.png
@@ -70,6 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/pioneers-editor.png
 %{_pixmapsdir}/pioneers-server.png
 %{_pixmapsdir}/pioneers.png
+%dir %{_pixmapsdir}/%{name}
 %{_pixmapsdir}/%{name}/*.png
 %{_gamesdir}/%{name}/computer_names
 %dir %{_omf_dest_dir}/%{name}
