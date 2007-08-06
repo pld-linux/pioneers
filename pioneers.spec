@@ -1,10 +1,10 @@
-# TODO - subpackage
+# TODO - ?subpackage?, R, BR, ctrl+H in client
 %define		_gamesdir	%{_datadir}/games
 Summary:	Pioneers - emulation of the board game "The Settlers of Catan".
 Summary(pl.UTF-8):	Pioneers - emulacja planszowej gry "Osadnicy z Catanu".
 Name:		pioneers
 Version:	0.11.2
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/sourceforge/pio/%{name}-%{version}.tar.gz
