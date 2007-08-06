@@ -2,6 +2,7 @@
 # - description, R, BR, ctrl+H in client
 # - add init file for server
 %define		_gamesdir	%{_datadir}/games
+%define		_gnomehelpsdir	%{_datadir}/gnome/help
 Summary:	Pioneers - emulation of the board game "The Settlers of Catan".
 Summary(pl.UTF-8):	Pioneers - emulacja planszowej gry "Osadnicy z Catanu".
 Name:		pioneers
@@ -121,7 +122,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %dir %{_gamesdir}/%{name}
@@ -144,9 +145,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pioneers-server-console
 %{_mandir}/man6/pioneers-server-console.6.gz
 
-%files help 
+%files help -f  %{name}.lang
 %dir %{_omf_dest_dir}/%{name}
 %{_omf_dest_dir}/%{name}/pioneers-C.omf 
+%exclude %{_datadir}/locale
 
 %files ai
 %attr(755,root,root) %{_bindir}/pioneersai
@@ -157,7 +159,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pioneers-meta-server
 %{_mandir}/man6/pioneers-meta-server.6.gz
 
-%files client
+%files client -f %{name}.lang
 %attr(755,root,root) %{_bindir}/pioneers
 %{_desktopdir}/pioneers.desktop
 %dir %{_gamesdir}/%{name}/themes
@@ -172,3 +174,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/%{name}/*.png
 %{_pixmapsdir}/pioneers.png
 %{_mandir}/man6/pioneers.6.gz
+%exclude %{_gnomehelpsdir}
