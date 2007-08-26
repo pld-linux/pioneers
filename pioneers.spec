@@ -38,6 +38,7 @@ Summary:	Pioneers client
 Summary(pl.UTF-8):	Klient gry Pioneers
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
+Requires:	yelp
 Obsoletes:	gnocatan-client
 Obsoletes:	gnocatan-data
 Obsoletes:	gnocatan-help
