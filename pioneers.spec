@@ -96,7 +96,7 @@ serwera gry.
 Summary:	Console-based Pioneers game server
 Summary(pl.UTF-8):	Konsolowy serwer gry Pioneers
 Group:		Applications/Games
-Requires:	%{name}-data = %{version}-%{release}
+Requires:	%{name}-server-data = %{version}-%{release}
 Obsoletes:	gnocatan-server
 
 %description server-console
@@ -113,7 +113,7 @@ instancja serwera. Parametry gry ustawia się opcjami linii poleceń.
 Summary:	GTK+-based Pioneers game server
 Summary(pl.UTF-8):	Oparty na GTK+ serwer gry Pioneers
 Group:		X11/Applications/Games
-Requires:	%{name}-data = %{version}-%{release}
+Requires:	%{name}-server-data = %{version}-%{release}
 Obsoletes:	gnocatan-server
 
 %description server-gtk
