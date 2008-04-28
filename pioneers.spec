@@ -3,12 +3,12 @@
 Summary:	Pioneers - emulation of the board game "The Settlers of Catan"
 Summary(pl.UTF-8):	Pioneers - emulacja planszowej gry "Osadnicy z Catanu"
 Name:		pioneers
-Version:	0.11.3
+Version:	0.12.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/pio/%{name}-%{version}.tar.gz
-# Source0-md5:	b9184fb30f3fb04d3d010628a2a12b52
+# Source0-md5:	b0e5684724457deb0b4abe75fc5c2158
 URL:		http://pio.sourceforge.net/
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.6
