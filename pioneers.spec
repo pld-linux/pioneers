@@ -1,14 +1,14 @@
-# TODO 
+# TODO
 # - add init file for server
 Summary:	Pioneers - emulation of the board game "The Settlers of Catan"
 Summary(pl.UTF-8):	Pioneers - emulacja planszowej gry "Osadnicy z Catanu"
 Name:		pioneers
-Version:	0.12.2
+Version:	0.12.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/Games
-Source0:	http://dl.sourceforge.net/pio/%{name}-%{version}.tar.gz
-# Source0-md5:	d7d7a542e438a25826bbe59c21fdc2b5
+Source0:	http://downloads.sourceforge.net/pio/%{name}-%{version}.tar.gz
+# Source0-md5:	459e82043fd8e1042626eb3c0c4819f7
 URL:		http://pio.sourceforge.net/
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.6
@@ -85,8 +85,8 @@ Group:		Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
 %description server-data
-The data package contains architecture independent data needed for
-the game server.
+The data package contains architecture independent data needed for the
+game server.
 
 %description server-data -l pl.UTF-8
 Ten pakiet zawiera niezależne od architektury dane potrzebne dla
@@ -171,19 +171,19 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pioneers
 %{_desktopdir}/pioneers.desktop
 %dir %{_gamesdir}/%{name}/themes
+%dir %{_gamesdir}/%{name}/themes/Classic
 %dir %{_gamesdir}/%{name}/themes/FreeCIV-like
+%dir %{_gamesdir}/%{name}/themes/Iceland
 %dir %{_gamesdir}/%{name}/themes/Tiny
 %dir %{_gamesdir}/%{name}/themes/Wesnoth-like
-%dir %{_gamesdir}/%{name}/themes/Iceland
 %{_gamesdir}/%{name}/themes/*/*.png
 %{_gamesdir}/%{name}/themes/*/*.cfg
-%{_gamesdir}/%{name}/themes/*.png
 %dir %{_pixmapsdir}/%{name}
 %{_pixmapsdir}/%{name}/*.png
 %{_pixmapsdir}/pioneers.png
 %{_mandir}/man6/pioneers.6*
 %dir %{_omf_dest_dir}/%{name}
-%{_omf_dest_dir}/%{name}/pioneers-C.omf 
+%{_omf_dest_dir}/%{name}/pioneers-C.omf
 
 %files ai
 %defattr(644,root,root,755)
@@ -196,6 +196,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pioneers-editor
 %{_desktopdir}/pioneers-editor.desktop
 %{_pixmapsdir}/pioneers-editor.png
+%{_mandir}/man6/pioneers-editor.6*
 
 %files server-data
 %defattr(644,root,root,755)
