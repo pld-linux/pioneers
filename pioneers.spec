@@ -4,7 +4,7 @@ Summary:	Pioneers - emulation of the board game "The Settlers of Catan"
 Summary(pl.UTF-8):	Pioneers - emulacja planszowej gry "Osadnicy z Catanu"
 Name:		pioneers
 Version:	0.12.4
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Games
 Source0:	http://downloads.sourceforge.net/pio/%{name}-%{version}.tar.gz
@@ -176,6 +176,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_gamesdir}/%{name}/themes/Iceland
 %dir %{_gamesdir}/%{name}/themes/Tiny
 %dir %{_gamesdir}/%{name}/themes/Wesnoth-like
+%dir %{_gamesdir}/%{name}/themes/ccFlickr
 %{_gamesdir}/%{name}/themes/*/*.png
 %{_gamesdir}/%{name}/themes/*/*.cfg
 %dir %{_pixmapsdir}/%{name}
