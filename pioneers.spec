@@ -10,7 +10,7 @@ Group:		Applications/Games
 Source0:	http://downloads.sourceforge.net/pio/%{name}-%{version}.tar.gz
 # Source0-md5:	44717b9315f9a4f5a8651c467ae4822c
 URL:		http://pio.sourceforge.net/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.6
 BuildRequires:	gtk+2-devel >= 2:2.6
 BuildRequires:	libgnome-devel >= 2.0.0
